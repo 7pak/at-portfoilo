@@ -58,9 +58,10 @@ export default function Header() {
             <button
               className={styles.langBtn}
               onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
-              aria-label={lang === 'ar' ? 'Switch to English' : 'التبديل إلى العربية'}
+              aria-label={lang === 'ar' ? 'Switch to English' : 'Switch to Arabic'}
+              title={lang === 'ar' ? 'Switch to English' : 'Switch to Arabic'}
             >
-              {lang === 'ar' ? 'EN' : 'ع'}
+              {lang === 'ar' ? 'EN' : 'AR'}
             </button>
             <a className={`btn ${styles.resume}`} href="/at_resume.pdf" target="_blank" rel="noopener">{t('nav.resume')}</a>
           </div>

@@ -261,12 +261,22 @@ function detectLang() {
 
 const I18nContext = createContext({ lang: 'en', setLang: () => {}, t: (k) => k })
 
+function initialLang() {
+  try {
+    const saved = localStorage.getItem('lang')
+    if (saved === 'en' || saved === 'ar') return saved
+  } catch {}
+  // Default to English when no saved preference
+  return 'en'
+}
+
 export function I18nProvider({ children }) {
-  const [lang, setLang] = useState(detectLang())
+  const [lang, setLang] = useState(() => initialLang())
 
   useEffect(() => {
     document.documentElement.lang = lang
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
+    try { localStorage.setItem('lang', lang) } catch {}
   }, [lang])
 
   const t = useMemo(() => {
