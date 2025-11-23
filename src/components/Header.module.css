@@ -1,0 +1,124 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(120%) blur(6px);
+  background: linear-gradient(180deg, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.6));
+  border-bottom: 1px solid rgba(136, 146, 176, 0.15);
+}
+
+.scrolled {
+  background: rgba(10, 25, 47, 0.92);
+  box-shadow: 0 8px 24px rgba(2, 12, 27, 0.45);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  color: var(--color-accent);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.nav a {
+  color: var(--color-muted);
+}
+
+.nav a:hover {
+  color: var(--color-accent);
+}
+
+.active {
+  color: var(--color-white);
+  position: relative;
+}
+.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.menuBtn {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.16);
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionsRow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.langBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  min-width: 44px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(136,146,176,0.08);
+  color: var(--color-text);
+}
+
+.resume {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+}
+
+.resume:hover {
+  box-shadow: 0 8px 24px rgba(100, 255, 218, 0.2);
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .menuBtn { display: inline-flex; }
+  .nav {
+    position: fixed;
+    top: 64px;
+    inset-inline-end: 0;
+    background: rgba(10, 25, 47, 0.96);
+    backdrop-filter: blur(6px);
+    border-inline-start: 1px solid rgba(136, 146, 176, 0.15);
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    transform: translateX(100%);
+    transition: transform 250ms ease;
+    height: calc(100vh - 64px);
+    width: min(80vw, 320px);
+  }
+  .open { transform: translateX(0); }
+}

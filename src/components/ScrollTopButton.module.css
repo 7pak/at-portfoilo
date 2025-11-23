@@ -1,0 +1,29 @@
+.root {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 50;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border: 1px solid rgba(var(--accent-rgb), 0.5);
+  box-shadow: 0 10px 26px rgba(var(--accent-rgb), 0.25);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(var(--accent-rgb), 0.35);
+}
+
+.hidden {
+  display: none;
+}
