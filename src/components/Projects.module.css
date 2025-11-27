@@ -123,6 +123,9 @@
   box-shadow: var(--shadow-soft);
 }
 
+/* Normalize paragraph spacing inside description cards */
+.descCard p { margin: 0; }
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -226,6 +229,8 @@
 .cardDesc {
   color: var(--color-muted);
   font-size: 0.95rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
   margin-bottom: var(--space-md);
 }
 
@@ -267,19 +272,33 @@
   .featured.reverse .content {
     grid-column: 1 / -1;
   }
-  /* Place content above media for better reading order */
-  .content { order: -1; }
+  /* Place content above media for better reading order on mobile */
+  .content { grid-row: 1; }
+  .imageWrap { grid-row: 2; }
   /* Slightly smaller title on mobile */
   .projectTitle { font-size: clamp(1.1rem, 5vw, 1.5rem); }
   .descCard { font-size: 0.95rem; }
   .chips { gap: 6px; }
   .chip { padding: 5px 9px; font-size: 0.75rem; }
   .featuredList { gap: var(--space-xl); }
+  /* Keep media height reasonable on phones */
+  .image { max-height: 380px; }
 }
 
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  .card {
+    padding: var(--space-sm);
+  }
+  .cardHeader {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+  .cardIconRow {
+    margin-inline-start: auto;
   }
 }
 
@@ -288,4 +307,19 @@
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* RTL refinements */
+[dir="rtl"] .featuredList,
+[dir="rtl"] .grid {
+  direction: rtl;
+}
+[dir="rtl"] .cardHeader {
+  direction: rtl;
+}
+
+/* Ensure videos cover nicely without awkward letterboxing */
+.featured video.image {
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
