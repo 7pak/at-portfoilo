@@ -1,5 +1,6 @@
 @import url('./styles/tokens.css');
 
+/* Global reset and base styles */
 html {
   scroll-behavior: smooth;
 }
