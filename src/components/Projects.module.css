@@ -42,7 +42,7 @@
 /* Featured Projects */
 .featuredList {
   display: grid;
-  gap: var(--space-2xl);
+  gap: 72px;
   margin-bottom: var(--space-2xl);
 }
 
@@ -124,7 +124,7 @@
 }
 
 /* Normalize paragraph spacing inside description cards */
-.descCard p { margin: 0; }
+.descCard p { margin: 0; line-height: 1.7; }
 
 .chips {
   display: flex;

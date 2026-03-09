@@ -40,7 +40,6 @@ function App() {
           <Projects />
         </section>
         <Skills />
-        <section id="team" className="section" />
         <Contact />
       </main>
       <Footer />

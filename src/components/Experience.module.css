@@ -97,8 +97,9 @@
 .detailPanel {
   background: rgba(17, 34, 64, 0.5);
   border: 1px solid rgba(136, 146, 176, 0.25);
+  border-inline-start: 3px solid var(--color-accent);
   border-radius: 16px;
-  padding: 24px;
+  padding: 32px;
   position: relative;
   box-shadow: var(--shadow-soft);
 }
@@ -109,7 +110,7 @@
 .location { color: var(--color-muted); font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
 .divider { height: 1px; background: linear-gradient(90deg, var(--color-accent), rgba(100,255,218,0)); opacity: 0.85; margin: 12px 0; }
 .achievements { list-style: none; padding: 0; margin: 12px 0 0; }
-.achievementItem { color: var(--color-text); margin-bottom: 8px; display: flex; gap: 8px; opacity: 0; animation: fadeInUp 400ms ease forwards; }
+.achievementItem { color: var(--color-text); margin-bottom: 12px; line-height: 1.6; display: flex; gap: 8px; opacity: 0; animation: fadeInUp 400ms ease forwards; }
 .achievementItem::before { content: '◆'; color: var(--color-accent); font-size: 12px; margin-top: 2px; }
 .techPills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .techPill { padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(136,146,176,0.35); color: var(--color-muted); font-size: 12px; }

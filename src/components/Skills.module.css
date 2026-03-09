@@ -62,7 +62,7 @@
 .card:hover {
   transform: translateY(-3px);
   border-color: var(--accent);
-  box-shadow: 0 10px 26px rgba(24, 160, 251, 0.12);
+  box-shadow: 0 10px 26px rgba(100, 255, 218, 0.12);
 }
 
 .cardHeader {
@@ -111,13 +111,11 @@
   border: 1px solid var(--border);
   border-radius: 10px;
   transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
-  animation: float 4.5s ease-in-out infinite;
-  animation-delay: calc(var(--i, 0) * 120ms);
 }
 
 .skillItem:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(24, 160, 251, 0.16), 0 6px 18px rgba(24, 160, 251, 0.12);
+  box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.16), 0 6px 18px rgba(100, 255, 218, 0.12);
   transform: translateY(-2px);
 }
 
@@ -132,28 +130,6 @@
   color: var(--text-secondary);
 }
 
-.proficiency {
-  display: flex;
-  gap: 4px;
-  margin-top: 2px;
-}
-
-.dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--border);
-}
-
-.dotActive {
-  background: var(--accent);
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
-  100% { transform: translateY(0); }
-}
 
 .reveal {
   opacity: 0;
@@ -174,5 +150,5 @@
   --line: rgba(255, 255, 255, 0.12);
   --text-primary: #e6f1ff;
   --text-secondary: #a8b2d1;
-  --accent: #18a0fb;
+  --accent: #64FFDA;
 }

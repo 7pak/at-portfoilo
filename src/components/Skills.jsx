@@ -114,17 +114,6 @@ const categories = [
   },
 ];
 
-function ProficiencyDots({ level = 0, total = 5 }) {
-  const dots = Array.from({ length: total }, (_, i) => i < level);
-  return (
-    <div className={styles.proficiency} aria-hidden="true">
-      {dots.map((active, i) => (
-        <span key={i} className={`${styles.dot} ${active ? styles.dotActive : ''}`}></span>
-      ))}
-    </div>
-  );
-}
-
 function SkillItem({ Icon, name, index }) {
   return (
     <div className={styles.skillItem} style={{ '--i': index }} aria-label={name} title={name}>
@@ -143,10 +132,7 @@ function CategoryCard({ title, Icon, items, reveal, index = 0 }) {
       </div>
       <div className={styles.skillGrid}>
         {items.map((item, i) => (
-          <div key={item.name}>
-            <SkillItem Icon={item.icon} name={item.name} index={i} />
-            <ProficiencyDots level={item.level} />
-          </div>
+          <SkillItem key={item.name} Icon={item.icon} name={item.name} index={i} />
         ))}
       </div>
     </div>

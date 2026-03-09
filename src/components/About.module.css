@@ -37,7 +37,8 @@
 .content {
   color: var(--color-muted);
   display: grid;
-  gap: var(--space-md);
+  gap: var(--space-lg);
+  line-height: 1.7;
 }
 
 .frame {

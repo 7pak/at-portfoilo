@@ -36,6 +36,7 @@
   color: var(--color-muted);
   max-width: 60ch;
   margin: var(--space-lg) 0;
+  line-height: 1.7;
 }
 
 .actions {
@@ -73,7 +74,7 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(40px);
-  opacity: 0.25;
+  opacity: 0.15;
   animation: float 12s ease-in-out infinite;
 }
 

@@ -7,34 +7,26 @@ const translations = {
       experience: 'Experience',
       projects: 'Projects',
       skills: 'Skills',
-      team: 'Team',
       contact: 'Contact',
       resume: 'Resume',
     },
     hero: {
       greeting: "Hello, I'm",
       name: 'Abdalla Tawfig',
-      roles: ['Software Engineer', 'Mobile Developer', 'Full‑Stack Developer'],
+      roles: ['Software Engineer', 'Mobile Developer', 'Full\u2011Stack Developer'],
       tagline:
-        'I’m a software engineer who loves building smooth, intuitive digital experiences. I enjoy turning ideas into real products that solve real problems. Always learning, always creating.',
+        'Software Engineer turning complex business needs into practical solutions. Focused on mobile, backend, and enterprise systems that scale.',
       ctas: { work: 'View My Work', contact: 'Get In Touch' },
     },
     about: {
       index: '01.',
       title: 'About Me',
       p1:
-        'My journey in software began at university, where I studied Software Engineering. That foundation in systems thinking, clean abstractions, and building maintainable code sparked a deep curiosity about how digital products come together — and what makes them feel smooth and intuitive. Since then, I’ve focused on mobile (Flutter, Kotlin), frontend (React), and backend (Spring Boot, REST APIs, Firebase/PostgreSQL), bringing the pieces together with clear architecture and practical delivery.',
+        "I'm a Software Engineer who enjoys turning complex business needs into practical software solutions. My core expertise spans mobile and cross-platform development using Flutter and Kotlin, alongside backend development with Spring Boot and PostgreSQL to build complete end-to-end systems.",
       p2:
-        'What I enjoy most is the mix of creativity and problem-solving. Every project is a chance to design something simple, solve a real challenge, and bring ideas to life in a way that feels effortless for the user. My philosophy is straightforward: build with clarity, keep things scalable, and always keep learning.',
+        "What drives me most is system design and problem-solving \u2014 understanding how a product should work, how data should flow, and how to structure a codebase so it remains scalable and maintainable as the system grows. I've worked on CRM platforms, internal business tools, and marketplace applications where the focus goes beyond UI into designing architectures that support real workflows.",
       p3:
-        'I’m also part of DRAXA, a small but focused team that builds modern apps, websites, and end-to-end systems. We use AI throughout our development process to help our clients save money, reduce delivery time, and get smarter, more efficient solutions. Our goal is to blend thoughtful design with solid engineering to create products that look great, perform well, and deliver real value.',
-      servicesTitle: 'What We Offer',
-      services: [
-        { title: 'Frontend Development', desc: 'Modern React UIs that are fast, accessible, and scalable.' },
-        { title: 'Backend Development', desc: 'Robust APIs and services designed for reliability and security.' },
-        { title: 'Mobile Development', desc: 'Native iOS/Android and cross‑platform apps with clean architecture.' },
-        { title: 'UI/UX Design', desc: 'Design systems, prototypes, and delightful micro‑interactions.' },
-      ],
+        "My toolkit includes Flutter, Android, Firebase, Supabase, WebSockets, Docker, and CI/CD pipelines, along with modern practices like Clean Architecture, structured state management, and automated deployments. Beyond writing code, I'm interested in how software supports business operations, enterprise systems, and digital transformation.",
     },
     experience: {
       index: '02.',
@@ -47,7 +39,7 @@ const translations = {
     },
     projects: {
       index: '03.',
-      title: "Things I've Built Lately",
+      title: "Things I've Built",
       aria: {
         technologies: 'Technologies',
         github: 'GitHub Repository',
@@ -60,31 +52,31 @@ const translations = {
       featured: [
         {
           label: 'Featured Project',
-          alt: 'Corteks app icon',
+          alt: 'Corteksa CRM app icon',
           desc:
-            'Currently building the mobile app for corteksa.org with a focus on clean UI, robust data handling, and scalable architecture. Iterative development in progress with staged releases.',
+            'Enterprise CRM mobile app featuring a dynamic engine that renders Tables, Kanban boards, grouped views, and Forms from server metadata. Includes unified multi-channel messaging (WhatsApp, Messenger, Instagram) with real-time WebSocket sync, optimistic UI, and scalable architecture powered by Clean Architecture and BLoC.',
         },
         {
           label: 'Featured Project',
           alt: 'Autoinvo app screen showing receipt list',
           desc:
-            'Autoinvo is a smart receipt management and invoicing app built for simplicity, speed, and reliability. Users can scan receipts using the camera or upload from their gallery, then filter and export them as PDFs. It supports full offline functionality with automatic sync when online — perfect for tracking expenses on the go.',
+            'A smart receipt management and invoicing app built for simplicity, speed, and reliability. Users can scan receipts using the camera or upload from their gallery, then filter and export them as PDFs. Supports full offline functionality with automatic sync when online \u2014 perfect for tracking expenses on the go.',
         },
         {
           label: 'Featured Project',
           alt: 'B2B Marketer product video demo',
           desc:
-            'A B2B e-commerce platform connecting Turkish manufacturers with global buyers, particularly in Arab markets. It spans textiles, electronics, food, and machinery — facilitating seamless trade and helping boost exports. Uses clean architecture, reliable payments, and in-app browsing for a cohesive experience.',
+            'A B2B e-commerce platform connecting Turkish manufacturers with global buyers, particularly in Arab markets. Spans textiles, electronics, food, and machinery \u2014 facilitating seamless trade and helping boost exports. Uses clean architecture, reliable payments, and in-app browsing for a cohesive experience.',
         },
       ],
       others: [
-        { desc: 'A sleek eCommerce app focused on fast shopping, clean architecture, and dynamic price updates — simplifying product browsing and purchasing.' },
+        { desc: 'A sleek eCommerce app focused on fast shopping, clean architecture, and dynamic price updates \u2014 simplifying product browsing and purchasing.' },
         { desc: 'WebSocket-based chat with presence, typing indicators, and message history.' },
         { desc: 'Drag-and-drop tasks, swimlanes, and team assignments with activity logs.' },
         { desc: 'Secure payment flows with 3DS and webhook reconciliation.' },
         { desc: 'Camera-based attendance with geofencing and notifications.' },
         { desc: 'Filterable insights with real-time charts and custom segments.' },
-        { desc: 'Unified routing handling for app ↔ web deep links.' },
+        { desc: 'Unified routing handling for app \u2194 web deep links.' },
         { desc: 'Chunked uploads with retry, thumbnail generation, and CDN caching.' },
         { desc: 'Multi-channel notifications with templates and scheduling.' },
         { desc: 'Markdown posts with tags, search, and RSS feed.' },
@@ -104,21 +96,21 @@ const translations = {
       spokenNames: { english: 'English', arabic: 'Arabic' },
     },
     contact: {
-      index: '06.',
+      index: '05.',
       title: 'Get In Touch',
       heroTitle: "Let's Work Together",
       subtitle:
-        "Have a project in mind or looking for a collaborator? I'm available for freelance, contract, and product‑focused engagements. Let's build something reliable, scalable, and delightful.",
+        "Have a project in mind or looking for a collaborator? I'm available for freelance, contract, and product\u2011focused engagements. Let's build something reliable, scalable, and delightful.",
       ctas: { sayHello: 'Say Hello', whatsapp: 'WhatsApp Me' },
-      labels: { github: 'GitHub', email: 'Email' },
+      labels: { github: 'GitHub', linkedin: 'LinkedIn', email: 'Email' },
       methods: { orEmail: 'Or email me at', orWhatsApp: 'Or WhatsApp me at', orFindMeOn: 'Or find me on' },
       aria: { sendEmail: 'Send email', whatsapp: 'WhatsApp' },
     },
     footer: {
       creditPrefix: 'Designed & Built by',
-      tooltip: 'Thanks for visiting! ✨',
+      tooltip: 'Thanks for visiting! \u2728',
       builtWith: 'Built with React',
-      copyright: '© {year} AT Software',
+      copyright: '\u00a9 {year} AT Software',
     },
     social: {
       aria: 'Social links',
@@ -128,135 +120,121 @@ const translations = {
   },
   ar: {
     nav: {
-      about: 'عنّي',
-      experience: 'الخبرات',
-      projects: 'المشاريع',
-      skills: 'المهارات',
-      team: 'الفريق',
-      contact: 'تواصل',
-      resume: 'السيرة الذاتية',
+      about: '\u0639\u0646\u0651\u064a',
+      experience: '\u0627\u0644\u062e\u0628\u0631\u0627\u062a',
+      projects: '\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639',
+      skills: '\u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a',
+      contact: '\u062a\u0648\u0627\u0635\u0644',
+      resume: '\u0627\u0644\u0633\u064a\u0631\u0629 \u0627\u0644\u0630\u0627\u062a\u064a\u0629',
     },
     hero: {
-      greeting: 'مرحباً، أنا',
-      name: 'عبدالله توفيق',
-      roles: ['مهندس برمجيات', 'مطوّر تطبيقات جوّال', 'مطوّر متكامل'],
+      greeting: '\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0623\u0646\u0627',
+      name: '\u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u062a\u0648\u0641\u064a\u0642',
+      roles: ['\u0645\u0647\u0646\u062f\u0633 \u0628\u0631\u0645\u062c\u064a\u0627\u062a', '\u0645\u0637\u0648\u0651\u0631 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u062c\u0648\u0651\u0627\u0644', '\u0645\u0637\u0648\u0651\u0631 \u0645\u062a\u0643\u0627\u0645\u0644'],
       tagline:
-        'أنا مهندس برمجيات أحب بناء تجارب رقمية سلسة وبديهية. أستمتع بتحويل الأفكار إلى منتجات حقيقية تحلّ مشكلات فعلية. أتعلم دائماً وأصنع دائماً.',
-      ctas: { work: 'شاهد أعمالي', contact: 'تواصل معي' },
+        '\u0645\u0647\u0646\u062f\u0633 \u0628\u0631\u0645\u062c\u064a\u0627\u062a \u0623\u062d\u0648\u0651\u0644 \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629 \u0627\u0644\u0645\u0639\u0642\u0651\u062f\u0629 \u0625\u0644\u0649 \u062d\u0644\u0648\u0644 \u0639\u0645\u0644\u064a\u0629. \u0623\u0631\u0643\u0651\u0632 \u0639\u0644\u0649 \u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u0645\u062d\u0645\u0648\u0644 \u0648\u0627\u0644\u062e\u0644\u0641\u064a\u0629 \u0648\u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0645\u0624\u0633\u0633\u064a\u0629 \u0627\u0644\u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062a\u0648\u0633\u0651\u0639.',
+      ctas: { work: '\u0634\u0627\u0647\u062f \u0623\u0639\u0645\u0627\u0644\u064a', contact: '\u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u064a' },
     },
     about: {
       index: '01.',
-      title: 'نبذة عنّي',
+      title: '\u0646\u0628\u0630\u0629 \u0639\u0646\u0651\u064a',
       p1:
-        'بدأت رحلتي في البرمجة من الجامعة حيث درست هندسة البرمجيات. هذا الأساس في التفكير المنظومي والبُنى الواضحة وبناء كود قابل للصيانة أشعل فضولي حول كيف تتكامل المنتجات الرقمية — وما الذي يجعلها سلسة وبديهية. منذ ذلك الحين ركّزت على تطوير المحمول (Flutter, Kotlin)، والواجهة الأمامية (React)، والخلفية (Spring Boot, REST APIs, Firebase/PostgreSQL)، مع بنية واضحة وتسليم عملي.',
+        '\u0623\u0646\u0627 \u0645\u0647\u0646\u062f\u0633 \u0628\u0631\u0645\u062c\u064a\u0627\u062a \u0623\u0633\u062a\u0645\u062a\u0639 \u0628\u062a\u062d\u0648\u064a\u0644 \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629 \u0627\u0644\u0645\u0639\u0642\u0651\u062f\u0629 \u0625\u0644\u0649 \u062d\u0644\u0648\u0644 \u0628\u0631\u0645\u062c\u064a\u0629 \u0639\u0645\u0644\u064a\u0629. \u062a\u062e\u0635\u0651\u0635\u064a \u0627\u0644\u0623\u0633\u0627\u0633\u064a \u0641\u064a \u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0627\u0644\u0645\u062d\u0645\u0648\u0644\u0629 \u0648\u0645\u062a\u0639\u062f\u062f\u0629 \u0627\u0644\u0645\u0646\u0635\u0627\u062a \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 Flutter \u0648Kotlin\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u062e\u0644\u0641\u064a\u0629 \u0628\u0640 Spring Boot \u0648PostgreSQL \u0644\u0628\u0646\u0627\u0621 \u0623\u0646\u0638\u0645\u0629 \u0645\u062a\u0643\u0627\u0645\u0644\u0629.',
       p2:
-        'أكثر ما أحبّه هو مزيج الإبداع وحلّ المشكلات. كل مشروع فرصة لتصميم شيء بسيط، وحلّ تحدٍ حقيقي، وتحويل الأفكار إلى تجارب سهلة للمستخدم. فلسفتي واضحة: ابنِ بوضوح، حافظ على قابلية التوسّع، واستمرّ بالتعلّم.',
+        '\u0623\u0643\u062b\u0631 \u0645\u0627 \u064a\u062d\u0641\u0651\u0632\u0646\u064a \u0647\u0648 \u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0648\u062d\u0644\u0651 \u0627\u0644\u0645\u0634\u0643\u0644\u0627\u062a \u2014 \u0641\u0647\u0645 \u0643\u064a\u0641 \u064a\u062c\u0628 \u0623\u0646 \u064a\u0639\u0645\u0644 \u0627\u0644\u0645\u0646\u062a\u062c\u060c \u0648\u0643\u064a\u0641 \u062a\u062a\u062f\u0641\u0651\u0642 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a\u060c \u0648\u0643\u064a\u0641 \u062a\u064f\u0647\u064a\u0643\u0644 \u0627\u0644\u0634\u064a\u0641\u0631\u0629 \u0644\u062a\u0628\u0642\u0649 \u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062a\u0648\u0633\u0651\u0639 \u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629. \u0639\u0645\u0644\u062a \u0639\u0644\u0649 \u0645\u0646\u0635\u0627\u062a CRM \u0648\u0623\u062f\u0648\u0627\u062a \u0623\u0639\u0645\u0627\u0644 \u062f\u0627\u062e\u0644\u064a\u0629 \u0648\u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0633\u0648\u0642 \u062d\u064a\u062b \u064a\u062a\u062c\u0627\u0648\u0632 \u0627\u0644\u062a\u0631\u0643\u064a\u0632 \u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645 \u0625\u0644\u0649 \u062a\u0635\u0645\u064a\u0645 \u0628\u0646\u0649 \u062a\u062f\u0639\u0645 \u0633\u064a\u0631 \u0639\u0645\u0644 \u062d\u0642\u064a\u0642\u064a.',
       p3:
-        'أنا أيضاً جزء من فريق DRAXA؛ فريق صغير ومركّز يبني تطبيقات ومواقع وأنظمة شاملة. نستخدم الذكاء الاصطناعي طوال عملية التطوير لمساعدة عملائنا على خفض التكاليف وتسريع التسليم والحصول على حلول أذكى وأكثر كفاءة. هدفنا المزج بين التصميم المدروس والهندسة المتينة لصناعة منتجات جميلة وعملية وتمنح قيمة حقيقية.',
-      servicesTitle: 'ماذا نقدّم',
-      services: [
-        { title: 'تطوير الواجهة الأمامية', desc: 'واجهات React حديثة سريعة وقابلة للوصول وقابلة للتوسّع.' },
-        { title: 'تطوير الخلفية', desc: 'واجهات وخدمات موثوقة مصمّمة للأمان والاعتمادية.' },
-        { title: 'تطوير المحمول', desc: 'تطبيقات iOS/Android أصلية ومتعدّدة المنصات ببنية نظيفة.' },
-        { title: 'تصميم واجهات وتجربة المستخدم', desc: 'أنظمة تصميم ونماذج أولية وتفاعلات دقيقة ممتعة.' },
-      ],
+        '\u062a\u0634\u0645\u0644 \u0623\u062f\u0648\u0627\u062a\u064a Flutter \u0648Android \u0648Firebase \u0648Supabase \u0648WebSockets \u0648Docker \u0648\u062e\u0637\u0648\u0637 CI/CD\u060c \u0645\u0639 \u0645\u0645\u0627\u0631\u0633\u0627\u062a \u062d\u062f\u064a\u062b\u0629 \u0645\u062b\u0644 Clean Architecture \u0648\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062d\u0627\u0644\u0629 \u0627\u0644\u0645\u0646\u0638\u0651\u0645\u0629 \u0648\u0627\u0644\u0646\u0634\u0631 \u0627\u0644\u0645\u0624\u062a\u0645\u062a. \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u0643\u0648\u062f\u060c \u0623\u0647\u062a\u0645\u0651 \u0628\u0643\u064a\u0641\u064a\u0629 \u062f\u0639\u0645 \u0627\u0644\u0628\u0631\u0645\u062c\u064a\u0627\u062a \u0644\u0644\u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629 \u0648\u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0645\u0624\u0633\u0633\u064a\u0629 \u0648\u0627\u0644\u062a\u062d\u0648\u0651\u0644 \u0627\u0644\u0631\u0642\u0645\u064a.',
     },
     experience: {
       index: '02.',
-      title: 'الخبرات',
+      title: '\u0627\u0644\u062e\u0628\u0631\u0627\u062a',
       aria: {
-        selectCompany: 'اختر شركة لعرض التفاصيل',
-        techStack: 'التقنيات المستخدمة',
-        openCompany: (c) => `فتح موقع ${c}`,
+        selectCompany: '\u0627\u062e\u062a\u0631 \u0634\u0631\u0643\u0629 \u0644\u0639\u0631\u0636 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644',
+        techStack: '\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645\u0629',
+        openCompany: (c) => `\u0641\u062a\u062d \u0645\u0648\u0642\u0639 ${c}`,
       },
     },
     projects: {
       index: '03.',
-      title: 'أعمال صنعتها مؤخراً',
+      title: '\u0623\u0639\u0645\u0627\u0644 \u0635\u0646\u0639\u062a\u0647\u0627',
       aria: {
-        technologies: 'التقنيات',
-        github: 'مستودع GitHub',
-        demo: 'عرض حي',
+        technologies: '\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a',
+        github: '\u0645\u0633\u062a\u0648\u062f\u0639 GitHub',
+        demo: '\u0639\u0631\u0636 \u062d\u064a',
       },
       cta: {
-        showMore: 'عرض المزيد',
-        showLess: 'إظهار أقل',
+        showMore: '\u0639\u0631\u0636 \u0627\u0644\u0645\u0632\u064a\u062f',
+        showLess: '\u0625\u0638\u0647\u0627\u0631 \u0623\u0642\u0644',
       },
       featured: [
         {
-          label: 'مشروع مميّز',
-          alt: 'أيقونة تطبيق كورتكس',
+          label: '\u0645\u0634\u0631\u0648\u0639 \u0645\u0645\u064a\u0651\u0632',
+          alt: '\u0623\u064a\u0642\u0648\u0646\u0629 \u062a\u0637\u0628\u064a\u0642 \u0643\u0648\u0631\u062a\u0643\u0633\u0627 CRM',
           desc:
-            'أعمل حالياً على تطبيق المحمول لموقع corteksa.org مع تركيز على واجهة نظيفة، معالجة بيانات قوية، وبنية قابلة للتوسّع. يتم التطوير بشكل متدرّج مع إصدارات مرحلية.',
+            '\u062a\u0637\u0628\u064a\u0642 CRM \u0645\u0624\u0633\u0633\u064a \u0644\u0644\u0645\u062d\u0645\u0648\u0644 \u064a\u062a\u0636\u0645\u0651\u0646 \u0645\u062d\u0631\u0651\u0643\u0627\u064b \u062f\u064a\u0646\u0627\u0645\u064a\u0643\u064a\u0627\u064b \u064a\u0639\u0631\u0636 \u0627\u0644\u062c\u062f\u0627\u0648\u0644 \u0648\u0644\u0648\u062d\u0627\u062a \u0643\u0627\u0646\u0628\u0627\u0646 \u0648\u0627\u0644\u0639\u0631\u0648\u0636 \u0627\u0644\u0645\u062c\u0645\u0651\u0639\u0629 \u0648\u0627\u0644\u0646\u0645\u0627\u0630\u062c \u0645\u0646 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062e\u0627\u062f\u0645. \u064a\u0634\u0645\u0644 \u0645\u0631\u0643\u0632 \u0631\u0633\u0627\u0626\u0644 \u0645\u0648\u062d\u0651\u062f \u0645\u062a\u0639\u062f\u062f \u0627\u0644\u0642\u0646\u0648\u0627\u062a (\u0648\u0627\u062a\u0633\u0627\u0628\u060c \u0645\u0627\u0633\u0646\u062c\u0631\u060c \u0625\u0646\u0633\u062a\u063a\u0631\u0627\u0645) \u0645\u0639 \u0645\u0632\u0627\u0645\u0646\u0629 WebSocket \u0641\u0648\u0631\u064a\u0629 \u0648\u0648\u0627\u062c\u0647\u0629 \u0645\u0633\u062a\u062e\u062f\u0645 \u062a\u0641\u0627\u0624\u0644\u064a\u0629 \u0648\u0628\u0646\u064a\u0629 \u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062a\u0648\u0633\u0651\u0639.',
         },
         {
-          label: 'مشروع مميّز',
-          alt: 'شاشة تطبيق Autoinvo تعرض قائمة الإيصالات',
+          label: '\u0645\u0634\u0631\u0648\u0639 \u0645\u0645\u064a\u0651\u0632',
+          alt: '\u0634\u0627\u0634\u0629 \u062a\u0637\u0628\u064a\u0642 Autoinvo \u062a\u0639\u0631\u0636 \u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0625\u064a\u0635\u0627\u0644\u0627\u062a',
           desc:
-            'Autoinvo تطبيق ذكي لإدارة الإيصالات والفواتير، مبني على البساطة والسرعة والموثوقية. يمكن للمستخدمين مسح الإيصالات بالكاميرا أو رفعها من المعرض ثم تصفيتها وتصديرها كملفات PDF. يدعم العمل دون اتصال مع مزامنة تلقائية عند الاتصال — مثالي لتتبع المصاريف أثناء التنقّل.',
+            'Autoinvo \u062a\u0637\u0628\u064a\u0642 \u0630\u0643\u064a \u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0625\u064a\u0635\u0627\u0644\u0627\u062a \u0648\u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631\u060c \u0645\u0628\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0628\u0633\u0627\u0637\u0629 \u0648\u0627\u0644\u0633\u0631\u0639\u0629 \u0648\u0627\u0644\u0645\u0648\u062b\u0648\u0642\u064a\u0629. \u064a\u0645\u0643\u0646 \u0644\u0644\u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646 \u0645\u0633\u062d \u0627\u0644\u0625\u064a\u0635\u0627\u0644\u0627\u062a \u0628\u0627\u0644\u0643\u0627\u0645\u064a\u0631\u0627 \u0623\u0648 \u0631\u0641\u0639\u0647\u0627 \u0645\u0646 \u0627\u0644\u0645\u0639\u0631\u0636 \u062b\u0645 \u062a\u0635\u0641\u064a\u062a\u0647\u0627 \u0648\u062a\u0635\u062f\u064a\u0631\u0647\u0627 \u0643\u0645\u0644\u0641\u0627\u062a PDF. \u064a\u062f\u0639\u0645 \u0627\u0644\u0639\u0645\u0644 \u062f\u0648\u0646 \u0627\u062a\u0635\u0627\u0644 \u0645\u0639 \u0645\u0632\u0627\u0645\u0646\u0629 \u062a\u0644\u0642\u0627\u0626\u064a\u0629 \u0639\u0646\u062f \u0627\u0644\u0627\u062a\u0635\u0627\u0644 \u2014 \u0645\u062b\u0627\u0644\u064a \u0644\u062a\u062a\u0628\u0639 \u0627\u0644\u0645\u0635\u0627\u0631\u064a\u0641 \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u062a\u0646\u0642\u0651\u0644.',
         },
         {
-          label: 'مشروع مميّز',
-          alt: 'فيديو عرض لمنتج B2B Marketer',
+          label: '\u0645\u0634\u0631\u0648\u0639 \u0645\u0645\u064a\u0651\u0632',
+          alt: '\u0641\u064a\u062f\u064a\u0648 \u0639\u0631\u0636 \u0644\u0645\u0646\u062a\u062c B2B Marketer',
           desc:
-            'منصّة تجارة بين الشركات تربط المصنّعين الأتراك بالمشترين حول العالم، خاصةً في الأسواق العربية. تشمل المنصّة مجالات النسيج والإلكترونيات والأغذية والآلات — لتسهيل التجارة وتعزيز الصادرات. تعتمد بنية نظيفة، مدفوعات موثوقة، وتصفّح داخل التطبيق لتجربة متكاملة.',
+            '\u0645\u0646\u0635\u0651\u0629 \u062a\u062c\u0627\u0631\u0629 \u0628\u064a\u0646 \u0627\u0644\u0634\u0631\u0643\u0627\u062a \u062a\u0631\u0628\u0637 \u0627\u0644\u0645\u0635\u0646\u0651\u0639\u064a\u0646 \u0627\u0644\u0623\u062a\u0631\u0627\u0643 \u0628\u0627\u0644\u0645\u0634\u062a\u0631\u064a\u0646 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u062e\u0627\u0635\u0629\u064b \u0641\u064a \u0627\u0644\u0623\u0633\u0648\u0627\u0642 \u0627\u0644\u0639\u0631\u0628\u064a\u0629. \u062a\u0634\u0645\u0644 \u0627\u0644\u0645\u0646\u0635\u0651\u0629 \u0645\u062c\u0627\u0644\u0627\u062a \u0627\u0644\u0646\u0633\u064a\u062c \u0648\u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0627\u062a \u0648\u0627\u0644\u0623\u063a\u0630\u064a\u0629 \u0648\u0627\u0644\u0622\u0644\u0627\u062a \u2014 \u0644\u062a\u0633\u0647\u064a\u0644 \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0648\u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a. \u062a\u0639\u062a\u0645\u062f \u0628\u0646\u064a\u0629 \u0646\u0638\u064a\u0641\u0629\u060c \u0645\u062f\u0641\u0648\u0639\u0627\u062a \u0645\u0648\u062b\u0648\u0642\u0629\u060c \u0648\u062a\u0635\u0641\u0651\u062d \u062f\u0627\u062e\u0644 \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0644\u062a\u062c\u0631\u0628\u0629 \u0645\u062a\u0643\u0627\u0645\u0644\u0629.',
         },
       ],
       others: [
-        { desc: 'تطبيق تجارة إلكترونية أنيق يركّز على سرعة التسوّق والبنية النظيفة وتحديث الأسعار ديناميكياً — لتبسيط تصفّح المنتجات والشراء.' },
-        { desc: 'خدمة محادثة تعتمد WebSocket مع مؤشرات التواجد والكتابة وسجلّ الرسائل.' },
-        { desc: 'لوحة كانبان بميزة السحب والإفلات ومسارات العمل وتعيين المهام وسجلّ النشاط.' },
-        { desc: 'تدفّقات دفع آمنة مع 3DS ومطابقة عبر webhook.' },
-        { desc: 'تتبّع الحضور عبر الكاميرا مع تحديد مواقع وإشعارات.' },
-        { desc: 'لوحة تحليلات بمرشّحات وإحصاءات حيّة وشرائح مخصّصة.' },
-        { desc: 'توجيه موحّد للروابط العميقة بين التطبيق والويب.' },
-        { desc: 'رفع الصور على شكل أجزاء مع إعادة المحاولة وتوليد مصغّرات وتخزين مؤقّت على CDN.' },
-        { desc: 'نظام إشعارات متعدد القنوات بقوالب وجدولة.' },
-        { desc: 'محرّك تدوين يدعم Markdown مع الوسوم والبحث وخلاصات RSS.' },
+        { desc: '\u062a\u0637\u0628\u064a\u0642 \u062a\u062c\u0627\u0631\u0629 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629 \u0623\u0646\u064a\u0642 \u064a\u0631\u0643\u0651\u0632 \u0639\u0644\u0649 \u0633\u0631\u0639\u0629 \u0627\u0644\u062a\u0633\u0648\u0651\u0642 \u0648\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u0646\u0638\u064a\u0641\u0629 \u0648\u062a\u062d\u062f\u064a\u062b \u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u062f\u064a\u0646\u0627\u0645\u064a\u0643\u064a\u0627\u064b \u2014 \u0644\u062a\u0628\u0633\u064a\u0637 \u062a\u0635\u0641\u0651\u062d \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a \u0648\u0627\u0644\u0634\u0631\u0627\u0621.' },
+        { desc: '\u062e\u062f\u0645\u0629 \u0645\u062d\u0627\u062f\u062b\u0629 \u062a\u0639\u062a\u0645\u062f WebSocket \u0645\u0639 \u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u062c\u062f \u0648\u0627\u0644\u0643\u062a\u0627\u0628\u0629 \u0648\u0633\u062c\u0644\u0651 \u0627\u0644\u0631\u0633\u0627\u0626\u0644.' },
+        { desc: '\u0644\u0648\u062d\u0629 \u0643\u0627\u0646\u0628\u0627\u0646 \u0628\u0645\u064a\u0632\u0629 \u0627\u0644\u0633\u062d\u0628 \u0648\u0627\u0644\u0625\u0641\u0644\u0627\u062a \u0648\u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0645\u0644 \u0648\u062a\u0639\u064a\u064a\u0646 \u0627\u0644\u0645\u0647\u0627\u0645 \u0648\u0633\u062c\u0644\u0651 \u0627\u0644\u0646\u0634\u0627\u0637.' },
+        { desc: '\u062a\u062f\u0641\u0651\u0642\u0627\u062a \u062f\u0641\u0639 \u0622\u0645\u0646\u0629 \u0645\u0639 3DS \u0648\u0645\u0637\u0627\u0628\u0642\u0629 \u0639\u0628\u0631 webhook.' },
+        { desc: '\u062a\u062a\u0628\u0651\u0639 \u0627\u0644\u062d\u0636\u0648\u0631 \u0639\u0628\u0631 \u0627\u0644\u0643\u0627\u0645\u064a\u0631\u0627 \u0645\u0639 \u062a\u062d\u062f\u064a\u062f \u0645\u0648\u0627\u0642\u0639 \u0648\u0625\u0634\u0639\u0627\u0631\u0627\u062a.' },
+        { desc: '\u0644\u0648\u062d\u0629 \u062a\u062d\u0644\u064a\u0644\u0627\u062a \u0628\u0645\u0631\u0634\u0651\u062d\u0627\u062a \u0648\u0625\u062d\u0635\u0627\u0621\u0627\u062a \u062d\u064a\u0651\u0629 \u0648\u0634\u0631\u0627\u0626\u062d \u0645\u062e\u0635\u0651\u0635\u0629.' },
+        { desc: '\u062a\u0648\u062c\u064a\u0647 \u0645\u0648\u062d\u0651\u062f \u0644\u0644\u0631\u0648\u0627\u0628\u0637 \u0627\u0644\u0639\u0645\u064a\u0642\u0629 \u0628\u064a\u0646 \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0648\u0627\u0644\u0648\u064a\u0628.' },
+        { desc: '\u0631\u0641\u0639 \u0627\u0644\u0635\u0648\u0631 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0623\u062c\u0632\u0627\u0621 \u0645\u0639 \u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u0645\u062d\u0627\u0648\u0644\u0629 \u0648\u062a\u0648\u0644\u064a\u062f \u0645\u0635\u063a\u0651\u0631\u0627\u062a \u0648\u062a\u062e\u0632\u064a\u0646 \u0645\u0624\u0642\u0651\u062a \u0639\u0644\u0649 CDN.' },
+        { desc: '\u0646\u0638\u0627\u0645 \u0625\u0634\u0639\u0627\u0631\u0627\u062a \u0645\u062a\u0639\u062f\u062f \u0627\u0644\u0642\u0646\u0648\u0627\u062a \u0628\u0642\u0648\u0627\u0644\u0628 \u0648\u062c\u062f\u0648\u0644\u0629.' },
+        { desc: '\u0645\u062d\u0631\u0651\u0643 \u062a\u062f\u0648\u064a\u0646 \u064a\u062f\u0639\u0645 Markdown \u0645\u0639 \u0627\u0644\u0648\u0633\u0648\u0645 \u0648\u0627\u0644\u0628\u062d\u062b \u0648\u062e\u0644\u0627\u0635\u0627\u062a RSS.' },
       ],
     },
     skills: {
       index: '04.',
-      title: 'المهارات والتقنيات',
+      title: '\u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a',
       categoriesTitles: {
-        'prog-langs': 'اللغات',
-        'backend-databases': 'الخلفية وقواعد البيانات',
-        'frontend-mobile': 'الواجهة الأمامية والمحمول',
-        architecture: 'الأنماط المعمارية',
-        'testing-tools': 'الاختبار والأدوات',
-        'spoken-langs': 'اللغات (البشرية)',
+        'prog-langs': '\u0627\u0644\u0644\u063a\u0627\u062a',
+        'backend-databases': '\u0627\u0644\u062e\u0644\u0641\u064a\u0629 \u0648\u0642\u0648\u0627\u0639\u062f \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a',
+        'frontend-mobile': '\u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0623\u0645\u0627\u0645\u064a\u0629 \u0648\u0627\u0644\u0645\u062d\u0645\u0648\u0644',
+        architecture: '\u0627\u0644\u0623\u0646\u0645\u0627\u0637 \u0627\u0644\u0645\u0639\u0645\u0627\u0631\u064a\u0629',
+        'testing-tools': '\u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0648\u0627\u0644\u0623\u062f\u0648\u0627\u062a',
+        'spoken-langs': '\u0627\u0644\u0644\u063a\u0627\u062a (\u0627\u0644\u0628\u0634\u0631\u064a\u0629)',
       },
-      spokenNames: { english: 'الإنجليزية', arabic: 'العربية' },
+      spokenNames: { english: '\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629', arabic: '\u0627\u0644\u0639\u0631\u0628\u064a\u0629' },
     },
     contact: {
-      index: '06.',
-      title: 'تواصل معي',
-      heroTitle: 'لنعمل معاً',
+      index: '05.',
+      title: '\u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u064a',
+      heroTitle: '\u0644\u0646\u0639\u0645\u0644 \u0645\u0639\u0627\u064b',
       subtitle:
-        'هل لديك مشروع أو تبحث عن متعاون؟ أنا متاح للعمل الحرّ والعقود والمشاريع ذات التركيز المنتجّي. دعنا نبني شيئاً موثوقاً وقابلاً للتوسّع وممتعاً.',
-      ctas: { sayHello: 'قل مرحباً', whatsapp: 'راسلني على واتساب' },
-      labels: { github: 'جيتهاب', email: 'البريد الإلكتروني' },
-      methods: { orEmail: 'أو راسلني عبر البريد على', orWhatsApp: 'أو عبر واتساب على', orFindMeOn: 'أو تجدني على' },
-      aria: { sendEmail: 'إرسال بريد إلكتروني', whatsapp: 'واتساب' },
+        '\u0647\u0644 \u0644\u062f\u064a\u0643 \u0645\u0634\u0631\u0648\u0639 \u0623\u0648 \u062a\u0628\u062d\u062b \u0639\u0646 \u0645\u062a\u0639\u0627\u0648\u0646\u061f \u0623\u0646\u0627 \u0645\u062a\u0627\u062d \u0644\u0644\u0639\u0645\u0644 \u0627\u0644\u062d\u0631\u0651 \u0648\u0627\u0644\u0639\u0642\u0648\u062f \u0648\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0630\u0627\u062a \u0627\u0644\u062a\u0631\u0643\u064a\u0632 \u0627\u0644\u0645\u0646\u062a\u062c\u0651\u064a. \u062f\u0639\u0646\u0627 \u0646\u0628\u0646\u064a \u0634\u064a\u0626\u0627\u064b \u0645\u0648\u062b\u0648\u0642\u0627\u064b \u0648\u0642\u0627\u0628\u0644\u0627\u064b \u0644\u0644\u062a\u0648\u0633\u0651\u0639 \u0648\u0645\u0645\u062a\u0639\u0627\u064b.',
+      ctas: { sayHello: '\u0642\u0644 \u0645\u0631\u062d\u0628\u0627\u064b', whatsapp: '\u0631\u0627\u0633\u0644\u0646\u064a \u0639\u0644\u0649 \u0648\u0627\u062a\u0633\u0627\u0628' },
+      labels: { github: '\u062c\u064a\u062a\u0647\u0627\u0628', linkedin: '\u0644\u064a\u0646\u0643\u062f\u0625\u0646', email: '\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a' },
+      methods: { orEmail: '\u0623\u0648 \u0631\u0627\u0633\u0644\u0646\u064a \u0639\u0628\u0631 \u0627\u0644\u0628\u0631\u064a\u062f \u0639\u0644\u0649', orWhatsApp: '\u0623\u0648 \u0639\u0628\u0631 \u0648\u0627\u062a\u0633\u0627\u0628 \u0639\u0644\u0649', orFindMeOn: '\u0623\u0648 \u062a\u062c\u062f\u0646\u064a \u0639\u0644\u0649' },
+      aria: { sendEmail: '\u0625\u0631\u0633\u0627\u0644 \u0628\u0631\u064a\u062f \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a', whatsapp: '\u0648\u0627\u062a\u0633\u0627\u0628' },
     },
     footer: {
-      creditPrefix: 'مصمّم ومبني بواسطة',
-      tooltip: 'شكراً لزيارتك! ✨',
-      builtWith: 'مبني باستخدام React',
-      copyright: '© {year} AT Software',
+      creditPrefix: '\u0645\u0635\u0645\u0651\u0645 \u0648\u0645\u0628\u0646\u064a \u0628\u0648\u0627\u0633\u0637\u0629',
+      tooltip: '\u0634\u0643\u0631\u0627\u064b \u0644\u0632\u064a\u0627\u0631\u062a\u0643! \u2728',
+      builtWith: '\u0645\u0628\u0646\u064a \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 React',
+      copyright: '\u00a9 {year} AT Software',
     },
     social: {
-      aria: 'روابط اجتماعية',
-      labels: { github: 'جيتهاب', linkedin: 'لينكدإن', email: 'البريد الإلكتروني' },
+      aria: '\u0631\u0648\u0627\u0628\u0637 \u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629',
+      labels: { github: '\u062c\u064a\u062a\u0647\u0627\u0628', linkedin: '\u0644\u064a\u0646\u0643\u062f\u0625\u0646', email: '\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a' },
     },
-    scrollTop: { aria: 'الانتقال للأعلى' },
+    scrollTop: { aria: '\u0627\u0644\u0627\u0646\u062a\u0642\u0627\u0644 \u0644\u0644\u0623\u0639\u0644\u0649' },
   },
-}
-
-function detectLang() {
-  const navLangs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).map((l) => l?.toLowerCase())
-  const isArabic = navLangs.some((l) => l && (l === 'ar' || l.startsWith('ar-')))
-  return isArabic ? 'ar' : 'en'
 }
 
 const I18nContext = createContext({ lang: 'en', setLang: () => {}, t: (k) => k })

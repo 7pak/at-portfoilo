@@ -9,14 +9,13 @@ const navItems = [
   { key: 'experience', href: '#experience' },
   { key: 'projects', href: '#projects' },
   { key: 'skills', href: '#skills' },
-  { key: 'team', href: '#team' },
   { key: 'contact', href: '#contact' },
 ]
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const activeId = useScrollSpy(['#home','#about','#experience','#projects','#skills','#team','#contact'], 80)
+  const activeId = useScrollSpy(['#home','#about','#experience','#projects','#skills','#contact'], 80)
   const { t, lang, setLang } = useI18n()
 
   useEffect(() => {
@@ -63,7 +62,7 @@ export default function Header() {
             >
               {lang === 'ar' ? 'EN' : 'AR'}
             </button>
-            <a className={`btn ${styles.resume}`} href="/at_resume.pdf" target="_blank" rel="noopener">{t('nav.resume')}</a>
+            <a className={`btn ${styles.resume}`} href="/at_software_resume.pdf" target="_blank" rel="noopener">{t('nav.resume')}</a>
           </div>
         </div>
       </div>

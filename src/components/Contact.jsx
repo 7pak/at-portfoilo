@@ -4,8 +4,8 @@ import { useInView } from '../hooks/useInView'
 import { Mail, Github, Linkedin, Twitter, ArrowRight, MessageCircle } from 'lucide-react'
 import { useI18n } from '../i18n/index.jsx'
 const EMAIL = 'abdella.tawfig@gmail.com'
-const WHATSAPP_NUMBER = '+905510896444'
-const WHATSAPP_URL = 'https://wa.me/905510896444'
+const WHATSAPP_NUMBER = '+971 551609926'
+const WHATSAPP_URL = 'https://wa.me/971551609926'
 export default function Contact() {
   const header = useInView({ threshold: 0.12 })
   const content = useInView({ threshold: 0.1 })
@@ -13,7 +13,7 @@ export default function Contact() {
 
   const socialLinks = [
     { Icon: Github, href: 'https://github.com/7pak', label: t('contact.labels.github') },
-    // Provide actual LinkedIn/Twitter URLs to enable these
+    { Icon: Linkedin, href: 'https://www.linkedin.com/in/abdella-tawfig', label: t('contact.labels.linkedin') },
   ]
 
   return (

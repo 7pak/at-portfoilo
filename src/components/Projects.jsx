@@ -7,12 +7,12 @@ import { useI18n } from '../i18n/index.jsx'
 const featuredProjects = [
   {
     label: 'Featured Project',
-    title: 'Corteks — Mobile App (WIP)',
+    title: 'Corteksa — Enterprise CRM Platform',
     image: '/corteks_icon.png',
-    alt: 'Corteks app icon',
+    alt: 'Corteksa CRM app icon',
     desc:
-      'Currently building the mobile app for corteksa.org with a focus on clean UI, robust data handling, and scalable architecture. Iterative development in progress with staged releases.',
-    tech: ['Flutter', 'WIP'],
+      'Enterprise CRM mobile app featuring a dynamic engine that renders Tables, Kanban boards, grouped views, and Forms from server metadata. Includes unified multi-channel messaging (WhatsApp, Messenger, Instagram) with real-time WebSocket sync, optimistic UI, and scalable architecture powered by Clean Architecture and BLoC.',
+    tech: ['Flutter', 'BLoC/Cubit', 'WebSocket', 'Firebase', 'Codemagic', 'Clean Architecture'],
     github: undefined,
     demo: 'https://corteksa.org',
   },
