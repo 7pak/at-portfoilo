@@ -14,7 +14,29 @@ const featuredProjects = [
       'Enterprise CRM mobile app featuring a dynamic engine that renders Tables, Kanban boards, grouped views, and Forms from server metadata. Includes unified multi-channel messaging (WhatsApp, Messenger, Instagram) with real-time WebSocket sync, optimistic UI, and scalable architecture powered by Clean Architecture and BLoC.',
     tech: ['Flutter', 'BLoC/Cubit', 'WebSocket', 'Firebase', 'Codemagic', 'Clean Architecture'],
     github: undefined,
-    demo: 'https://corteksa.org',
+    demo: 'https://play.google.com/store/apps/details?id=com.moontij.corteksa',
+  },
+  {
+    label: 'Featured Project',
+    title: 'Mawaqi3 — Local Business Directory & Marketplace',
+    image: '/mawaqi3_logo.jpg',
+    alt: 'Mawaqi3 app logo',
+    desc:
+      'A local business directory and service marketplace for Kuwait. Users can browse companies by category, save favorites, and manage their own listings. Features real-time push notifications, search and filtering, user profiles with Arabic and English support, and a trust and verification system for businesses.',
+    tech: ['Flutter', 'BLoC', 'Dio', 'Firebase FCM', 'Google Maps', 'Clean Architecture'],
+    github: undefined,
+    demo: 'https://kuwait-explorer-legacy.vercel.app/en',
+  },
+  {
+    label: 'Featured Project',
+    title: 'Recallly — AI Voice-to-CRM App',
+    image: '/recallly_logo.png',
+    alt: 'Recallly app logo',
+    desc:
+      'An AI-powered voice-to-CRM native Android app for field professionals. Tap the mic, talk naturally about a field visit, and the app transcribes and extracts structured CRM data automatically. Features dual-mode transcription (online and offline via whisper.cpp), AI extraction via Gemini 2.5 Flash, PDF export, Google Calendar integration, and offline-first architecture.',
+    tech: ['Kotlin', 'Jetpack Compose', 'Gemini AI', 'whisper.cpp', 'Room', 'Firebase Auth', 'Clean Architecture'],
+    github: undefined,
+    demo: 'https://play.google.com/store/apps/details?id=com.at.recallly',
   },
   {
     label: 'Featured Project',
@@ -27,88 +49,62 @@ const featuredProjects = [
     github: undefined,
     demo: 'https://play.google.com/store/apps/details?id=com.at.autoinvo.auto_invo',
   },
+]
+
+const otherProjects = [
   {
-    label: 'Featured Project',
     title: 'B2B Marketer — Turkish Manufacturers Marketplace',
-    video: '/ahhhaaa.mp4',
-    alt: 'B2B Marketer product video demo',
+    image: '/b2b_preview.jpg',
+    alt: 'B2B Marketer app preview',
     desc:
       'A B2B e-commerce platform connecting Turkish manufacturers with global buyers, particularly in Arab markets. It spans textiles, electronics, food, and machinery — facilitating seamless trade and helping boost exports. Uses clean architecture, reliable payments, and in-app browsing for a cohesive experience.',
     tech: ['Flutter', 'Bloc', 'Dio', 'MVVM', 'SharedPreferences', 'WebView', 'Iyzico', 'REST API'],
     github: undefined,
     demo: 'https://www.turkishmarketer.com',
   },
-]
-
-const otherProjects = [
   {
     title: 'Swift eCommerce',
+    image: '/swift_present.png',
+    alt: 'Swift eCommerce app preview',
     desc: 'A sleek eCommerce app focused on fast shopping, clean architecture, and dynamic price updates — simplifying product browsing and purchasing.',
     tech: ['Flutter', 'BLoC', 'GetIt', 'Dio', 'MVVM', 'SharedPreferences', 'Next.js'],
     github: undefined,
     demo: undefined,
   },
   {
-    title: 'Realtime Chat Service',
-    desc: 'WebSocket-based chat with presence, typing indicators, and message history.',
-    tech: ['Node.js', 'WebSocket', 'Redis'],
-    github: 'https://github.com/7pak',
+    title: 'LonePaw — Pet Adoption Platform',
+    image: '/lonepaw_present.png',
+    alt: 'LonePaw pet adoption app preview',
+    desc: 'A mobile platform connecting pet owners with potential adopters. Browse pets by category, save favorites, post adoption listings, and chat directly with owners — streamlining the entire adoption process.',
+    tech: ['Kotlin', 'Jetpack Compose', 'Ktor', 'Room', 'Firebase', 'Dagger Hilt', 'MVI'],
+    github: 'https://github.com/7pak/LonePaw-PetAdoption',
     demo: undefined,
   },
   {
-    title: 'Kanban Board',
-    desc: 'Drag-and-drop tasks, swimlanes, and team assignments with activity logs.',
-    tech: ['React', 'Zustand', 'Dnd Kit'],
-    github: 'https://github.com/7pak',
+    title: 'TastyTable — Recipe Discovery App',
+    image: '/tastytable_present.png',
+    alt: 'TastyTable recipe app preview',
+    desc: 'A recipe discovery app that helps users find delicious meals by name or category. Browse detailed ingredients and instructions, watch cooking videos, and bookmark favorites for quick access.',
+    tech: ['Kotlin', 'Jetpack Compose', 'Ktor', 'Room', 'MVI', 'Koin'],
+    github: 'https://github.com/7pak/Tasty-Table',
     demo: undefined,
   },
   {
-    title: 'Payments Gateway',
-    desc: 'Secure payment flows with 3DS and webhook reconciliation.',
-    tech: ['Node.js', 'Express', 'Iyzico'],
-    github: 'https://github.com/7pak',
+    title: 'Vib-Audio — Music Player',
+    image: '/vibaudio_present.png',
+    alt: 'Vib-Audio music player app preview',
+    desc: 'An Android music player with background playback, system notification controls, metadata extraction, and a collapsible UI — built for a smooth listening experience.',
+    tech: ['Kotlin', 'Jetpack Compose', 'ExoPlayer', 'Coroutines', 'Koin', 'MVI'],
+    github: 'https://github.com/7pak/Vib-Player',
     demo: undefined,
   },
   {
-    title: 'Attendance Tracker',
-    desc: 'Camera-based attendance with geofencing and notifications.',
-    tech: ['Flutter', 'Firebase', 'FCM'],
-    github: 'https://github.com/7pak',
-    demo: undefined,
-  },
-  {
-    title: 'Analytics Dashboard',
-    desc: 'Filterable insights with real-time charts and custom segments.',
-    tech: ['React', 'Chart.js', 'REST'],
-    github: 'https://github.com/7pak',
-    demo: undefined,
-  },
-  {
-    title: 'Deep Link Router',
-    desc: 'Unified routing handling for app ↔ web deep links.',
-    tech: ['Flutter', 'URI Routing'],
-    github: 'https://github.com/7pak',
-    demo: undefined,
-  },
-  {
-    title: 'Image Uploader',
-    desc: 'Chunked uploads with retry, thumbnail generation, and CDN caching.',
-    tech: ['Node.js', 'S3', 'Sharp'],
-    github: 'https://github.com/7pak',
-    demo: undefined,
-  },
-  {
-    title: 'Notification Service',
-    desc: 'Multi-channel notifications with templates and scheduling.',
-    tech: ['Node.js', 'FCM', 'Email'],
-    github: 'https://github.com/7pak',
-    demo: undefined,
-  },
-  {
-    title: 'Blog Engine',
-    desc: 'Markdown posts with tags, search, and RSS feed.',
-    tech: ['React', 'Node.js'],
-    github: 'https://github.com/7pak',
+    title: 'Tyksee — Glasses eCommerce',
+    image: '/tyksee_present.png',
+    alt: 'Tyksee glasses eCommerce app preview',
+    desc: 'An e-commerce app for browsing and purchasing eyewear. Features product catalogs, filtering, and a clean shopping experience built with modern architecture.',
+    tech: ['Flutter', 'Bloc', 'Dio', 'Clean Architecture'],
+    github: undefined,
     demo: undefined,
   },
 ]
@@ -170,35 +166,46 @@ function FeaturedItem({ item, index }) {
 function GridCard({ item, index }) {
   const reveal = useInView({ threshold: 0.1 })
   const { t } = useI18n()
+  const cardLink = item.github || item.demo || item.image
   return (
-    <div
+    <a
       ref={reveal.ref}
+      href={cardLink}
+      target="_blank"
+      rel="noopener"
       className={`${styles.card} ${styles.reveal} ${reveal.inView ? styles.revealed : ''}`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div className={styles.cardHeader}>
-        <Folder size={22} className={styles.folderIcon} aria-hidden="true" />
-        <div className={styles.cardIconRow}>
-          {item.github && (
-            <a className={styles.iconLink} href={item.github} target="_blank" rel="noopener" aria-label={t('projects.aria.github')}>
-              <Github size={18} />
-            </a>
-          )}
-          {item.demo && item.demo !== '#' && (
-            <a className={styles.iconLink} href={item.demo} target="_blank" rel="noopener" aria-label={t('projects.aria.demo')}>
-              <ExternalLink size={18} />
-            </a>
-          )}
+      {item.image && (
+        <div className={styles.cardImageWrap}>
+          <img className={styles.cardImage} src={item.image} alt={item.alt || item.title} loading="lazy" />
+        </div>
+      )}
+      <div className={styles.cardBody}>
+        <div className={styles.cardHeader}>
+          <Folder size={22} className={styles.folderIcon} aria-hidden="true" />
+          <div className={styles.cardIconRow}>
+            {item.github && (
+              <span className={styles.iconLink} aria-label={t('projects.aria.github')}>
+                <Github size={18} />
+              </span>
+            )}
+            {item.demo && item.demo !== '#' && (
+              <span className={styles.iconLink} aria-label={t('projects.aria.demo')}>
+                <ExternalLink size={18} />
+              </span>
+            )}
+          </div>
+        </div>
+        <div className={styles.cardTitle}>{item.title}</div>
+        <div className={styles.cardDesc}>{item.desc}</div>
+        <div className={styles.cardTags} aria-label={t('projects.aria.technologies')}>
+          {item.tech.map((t, i) => (
+            <span key={i} className={styles.chip}>{t}</span>
+          ))}
         </div>
       </div>
-      <div className={styles.cardTitle}>{item.title}</div>
-      <div className={styles.cardDesc}>{item.desc}</div>
-      <div className={styles.cardTags} aria-label={t('projects.aria.technologies')}>
-        {item.tech.map((t, i) => (
-          <span key={i} className={styles.chip}>{t}</span>
-        ))}
-      </div>
-    </div>
+    </a>
   )
 }
 
