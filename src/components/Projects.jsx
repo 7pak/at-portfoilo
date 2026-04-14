@@ -3,6 +3,7 @@ import styles from './Projects.module.css'
 import { useInView } from '../hooks/useInView'
 import { Github, ExternalLink, Folder } from 'lucide-react'
 import { useI18n } from '../i18n/index.jsx'
+import ProjectDetail from './ProjectDetail.jsx'
 
 const featuredProjects = [
   {
@@ -61,6 +62,7 @@ const otherProjects = [
     tech: ['Flutter', 'Bloc', 'Dio', 'MVVM', 'SharedPreferences', 'WebView', 'Iyzico', 'REST API'],
     github: undefined,
     demo: 'https://www.turkishmarketer.com',
+    video: '/ahhhaaa.mp4',
   },
   {
     title: 'Swift eCommerce',
@@ -70,6 +72,14 @@ const otherProjects = [
     tech: ['Flutter', 'BLoC', 'GetIt', 'Dio', 'MVVM', 'SharedPreferences', 'Next.js'],
     github: undefined,
     demo: undefined,
+    gallery: [
+      '/swift/swift_1-portrait.png',
+      '/swift/swift_2-portrait.png',
+      '/swift/swift_3-portrait.png',
+      '/swift/swift_4-portrait.png',
+      '/swift/swift_5-portrait.png',
+      '/swift/swift_6-portrait.png',
+    ],
   },
   {
     title: 'LonePaw — Pet Adoption Platform',
@@ -106,6 +116,12 @@ const otherProjects = [
     tech: ['Flutter', 'Bloc', 'Dio', 'Clean Architecture'],
     github: undefined,
     demo: undefined,
+    gallery: [
+      '/tyksee/tyksee_1-portrait.png',
+      '/tyksee/tyksee_2-portrait.png',
+      '/tyksee/tyksee_3-portrait.png',
+      '/tyksee/tyksee_4-portrait.png',
+    ],
   },
 ]
 
@@ -163,19 +179,14 @@ function FeaturedItem({ item, index }) {
   )
 }
 
-function GridCard({ item, index }) {
+function GridCard({ item, index, onOpen }) {
   const reveal = useInView({ threshold: 0.1 })
   const { t } = useI18n()
-  const cardLink = item.github || item.demo || item.image
-  return (
-    <a
-      ref={reveal.ref}
-      href={cardLink}
-      target="_blank"
-      rel="noopener"
-      className={`${styles.card} ${styles.reveal} ${reveal.inView ? styles.revealed : ''}`}
-      style={{ transitionDelay: `${index * 80}ms` }}
-    >
+  const hasGalleryOrVideo = Boolean(item.gallery?.length || item.video)
+  const externalLink = item.github || item.demo
+
+  const cardInner = (
+    <>
       {item.image && (
         <div className={styles.cardImageWrap}>
           <img className={styles.cardImage} src={item.image} alt={item.alt || item.title} loading="lazy" />
@@ -200,11 +211,42 @@ function GridCard({ item, index }) {
         <div className={styles.cardTitle}>{item.title}</div>
         <div className={styles.cardDesc}>{item.desc}</div>
         <div className={styles.cardTags} aria-label={t('projects.aria.technologies')}>
-          {item.tech.map((t, i) => (
-            <span key={i} className={styles.chip}>{t}</span>
+          {item.tech.map((tech, i) => (
+            <span key={i} className={styles.chip}>{tech}</span>
           ))}
         </div>
       </div>
+    </>
+  )
+
+  const className = `${styles.card} ${styles.reveal} ${reveal.inView ? styles.revealed : ''}`
+  const style = { transitionDelay: `${index * 80}ms` }
+
+  if (hasGalleryOrVideo) {
+    return (
+      <button
+        ref={reveal.ref}
+        type="button"
+        className={`${className} ${styles.cardButton}`}
+        style={style}
+        onClick={() => onOpen(item)}
+        aria-label={t('projects.aria.openDetails')}
+      >
+        {cardInner}
+      </button>
+    )
+  }
+
+  return (
+    <a
+      ref={reveal.ref}
+      href={externalLink || '#'}
+      target="_blank"
+      rel="noopener"
+      className={className}
+      style={style}
+    >
+      {cardInner}
     </a>
   )
 }
@@ -212,6 +254,7 @@ function GridCard({ item, index }) {
 export default function Projects() {
   const header = useInView({ threshold: 0.12 })
   const [expanded, setExpanded] = useState(false)
+  const [activeProject, setActiveProject] = useState(null)
   const visibleOthers = expanded ? otherProjects : otherProjects.slice(0, 6)
   const { t } = useI18n()
 
@@ -249,7 +292,7 @@ export default function Projects() {
         {/* Other notable projects grid */}
         <div className={styles.grid}>
           {visibleOthersLocalized.map((p, i) => (
-            <GridCard key={p.title} item={p} index={i} />
+            <GridCard key={p.title} item={p} index={i} onOpen={setActiveProject} />
           ))}
         </div>
 
@@ -261,6 +304,8 @@ export default function Projects() {
           </div>
         )}
       </div>
+
+      <ProjectDetail item={activeProject} onClose={() => setActiveProject(null)} />
     </div>
   )
 }

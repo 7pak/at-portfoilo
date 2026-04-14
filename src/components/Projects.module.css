@@ -185,6 +185,15 @@
   color: inherit;
 }
 
+.cardButton {
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: start;
+  cursor: pointer;
+  font: inherit;
+}
+
 .card::before {
   content: '';
   position: absolute;
