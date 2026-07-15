@@ -69,7 +69,7 @@ const translations = {
         },
         {
           label: 'Featured Project',
-          alt: 'Mawaqi3 app logo',
+          alt: 'Mwaqi3 app logo',
           desc:
             'A local business directory and service marketplace for Kuwait. Users can browse companies by category, save favorites, and manage their own listings. Features real-time push notifications, search and filtering, user profiles with Arabic and English support, and a trust and verification system for businesses.',
         },

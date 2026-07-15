@@ -20,9 +20,9 @@ const featuredProjects = [
   },
   {
     label: 'Featured Project',
-    title: 'Mawaqi3 — Local Business Directory & Marketplace',
+    title: 'Mwaqi3 — Local Business Directory & Marketplace',
     image: '/mawaqi3_logo.jpg',
-    alt: 'Mawaqi3 app logo',
+    alt: 'Mwaqi3 app logo',
     desc:
       'A local business directory and service marketplace for Kuwait. Users can browse companies by category, save favorites, and manage their own listings. Features real-time push notifications, search and filtering, user profiles with Arabic and English support, and a trust and verification system for businesses.',
     tech: ['Flutter', 'BLoC', 'Dio', 'Firebase FCM', 'Google Maps', 'Clean Architecture'],

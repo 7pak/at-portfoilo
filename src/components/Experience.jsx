@@ -35,7 +35,7 @@ const experiences = [
     logo: null,
     skills: ['Flutter', 'BLoC', 'Dio', 'Firebase FCM', 'Google Maps', 'Clean Architecture'],
     bullets: [
-      'Built Mawaqi3, a local business directory and service marketplace for Kuwait, from the ground up.',
+      'Built Mwaqi3, a local business directory and service marketplace for Kuwait, from the ground up.',
       'Implemented company browsing by category with infinite-scroll pagination, favorites, and advanced search and filtering.',
       'Developed user authentication, company listing management, and profile features with full Arabic and English support.',
       'Integrated Firebase FCM for real-time push notifications and Google Maps for location-based discovery.',
@@ -95,7 +95,7 @@ const milestones = [
   { year: '2024', title: 'First Professional Role', desc: 'Flutter dev; dashboards, payments, and real-time systems.' },
   { year: '2025', title: 'Founded AT Software', desc: 'Building premium products and client solutions.' },
   { year: '2025', title: 'Key Promotions & Transitions', desc: 'Freelance projects and cross-functional contributions.' },
-  { year: '2026', title: 'Script Media — Mawaqi3', desc: 'Built a Kuwait business directory and marketplace app.' },
+  { year: '2026', title: 'Script Media — Mwaqi3', desc: 'Built a Kuwait business directory and marketplace app.' },
   { year: '2026', title: 'Present Day', desc: 'Mobile Engineer at MOONTIJ driving CRM and integrations.' },
 ]
 
