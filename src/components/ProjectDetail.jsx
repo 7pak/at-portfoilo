@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './ProjectDetail.module.css'
-import { X, Github, ExternalLink } from 'lucide-react'
+import { X } from 'lucide-react'
 import { useI18n } from '../i18n/index.jsx'
+import { getProjectLinks } from './projectLinks.js'
 
 export default function ProjectDetail({ item, onClose }) {
   const { t } = useI18n()
@@ -26,6 +27,8 @@ export default function ProjectDetail({ item, onClose }) {
   }, [item, onClose])
 
   if (!item) return null
+
+  const links = getProjectLinks(item)
 
   const onBackdropClick = (e) => {
     if (e.target === e.currentTarget) onClose()
@@ -61,20 +64,14 @@ export default function ProjectDetail({ item, onClose }) {
             </div>
           )}
 
-          {(item.github || (item.demo && item.demo !== '#')) && (
+          {links.length > 0 && (
             <div className={styles.actions}>
-              {item.github && (
-                <a className={styles.actionBtn} href={item.github} target="_blank" rel="noopener">
-                  <Github size={16} />
-                  <span>{t('projects.detail.viewGithub')}</span>
+              {links.map(({ key, Icon, label, url }) => (
+                <a key={key} className={styles.actionBtn} href={url} target="_blank" rel="noopener">
+                  <Icon size={16} />
+                  <span>{t(label)}</span>
                 </a>
-              )}
-              {item.demo && item.demo !== '#' && (
-                <a className={styles.actionBtn} href={item.demo} target="_blank" rel="noopener">
-                  <ExternalLink size={16} />
-                  <span>{t('projects.detail.viewDemo')}</span>
-                </a>
-              )}
+              ))}
             </div>
           )}
 

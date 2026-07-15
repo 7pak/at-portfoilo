@@ -24,7 +24,13 @@ export default function Hero() {
           </div>
           <div className={`${styles.photoWrap} ${styles.fadeUp}`}>
             <div className={styles.photo}>
-              <img src="/professional.png" alt="Portrait of Abdalla Tawfig" loading="lazy" />
+              <img
+                src="/professional_linkedin.jpg"
+                alt="Portrait of Abdalla Tawfig"
+                width="720"
+                height="900"
+                fetchPriority="high"
+              />
             </div>
           </div>
         </div>

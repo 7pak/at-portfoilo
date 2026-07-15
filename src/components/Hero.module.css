@@ -66,6 +66,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Portrait source: bias the square crop upward so the face stays centred. */
+  object-position: 50% 18%;
 }
 
 .bgShapes::before,

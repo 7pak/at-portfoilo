@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import styles from './Projects.module.css'
 import { useInView } from '../hooks/useInView'
-import { Github, ExternalLink, Folder } from 'lucide-react'
+import { Folder } from 'lucide-react'
 import { useI18n } from '../i18n/index.jsx'
 import ProjectDetail from './ProjectDetail.jsx'
+import { getProjectLinks } from './projectLinks.js'
 
 const featuredProjects = [
   {
@@ -14,8 +15,8 @@ const featuredProjects = [
     desc:
       'Enterprise CRM mobile app featuring a dynamic engine that renders Tables, Kanban boards, grouped views, and Forms from server metadata. Includes unified multi-channel messaging (WhatsApp, Messenger, Instagram) with real-time WebSocket sync, optimistic UI, and scalable architecture powered by Clean Architecture and BLoC.',
     tech: ['Flutter', 'BLoC/Cubit', 'WebSocket', 'Firebase', 'Codemagic', 'Clean Architecture'],
-    github: undefined,
-    demo: 'https://play.google.com/store/apps/details?id=com.moontij.corteksa',
+    playStore: 'https://play.google.com/store/apps/details?id=com.moontij.corteksa',
+    appStore: 'https://apps.apple.com/us/app/corteksa/id6772713745',
   },
   {
     label: 'Featured Project',
@@ -25,8 +26,7 @@ const featuredProjects = [
     desc:
       'A local business directory and service marketplace for Kuwait. Users can browse companies by category, save favorites, and manage their own listings. Features real-time push notifications, search and filtering, user profiles with Arabic and English support, and a trust and verification system for businesses.',
     tech: ['Flutter', 'BLoC', 'Dio', 'Firebase FCM', 'Google Maps', 'Clean Architecture'],
-    github: undefined,
-    demo: 'https://kuwait-explorer-legacy.vercel.app/en',
+    playStore: 'https://play.google.com/store/apps/details?id=com.at.mwaqi3',
   },
   {
     label: 'Featured Project',
@@ -36,8 +36,7 @@ const featuredProjects = [
     desc:
       'An AI-powered voice-to-CRM native Android app for field professionals. Tap the mic, talk naturally about a field visit, and the app transcribes and extracts structured CRM data automatically. Features dual-mode transcription (online and offline via whisper.cpp), AI extraction via Gemini 2.5 Flash, PDF export, Google Calendar integration, and offline-first architecture.',
     tech: ['Kotlin', 'Jetpack Compose', 'Gemini AI', 'whisper.cpp', 'Room', 'Firebase Auth', 'Clean Architecture'],
-    github: undefined,
-    demo: 'https://play.google.com/store/apps/details?id=com.at.recallly',
+    playStore: 'https://play.google.com/store/apps/details?id=com.at.recallly',
   },
   {
     label: 'Featured Project',
@@ -47,8 +46,7 @@ const featuredProjects = [
     desc:
       'Autoinvo is a smart receipt management and invoicing app built for simplicity, speed, and reliability. Users can scan receipts using the camera or upload from their gallery, then filter and export them as PDFs. It supports full offline functionality with automatic sync when online — perfect for tracking expenses on the go.',
     tech: ['Flutter', 'Firebase Auth', 'Cloud Firestore', 'Firebase Storage', 'Crashlytics', 'Analytics', 'camera', 'image_picker', 'PDF', 'Bloc'],
-    github: undefined,
-    demo: 'https://play.google.com/store/apps/details?id=com.at.autoinvo.auto_invo',
+    playStore: 'https://play.google.com/store/apps/details?id=com.at.autoinvo.auto_invo',
   },
 ]
 
@@ -163,16 +161,19 @@ function FeaturedItem({ item, index }) {
           </div>
         )}
         <div className={styles.links}>
-          {item.github && (
-            <a className={styles.iconLink} href={item.github} target="_blank" rel="noopener" aria-label={t('projects.aria.github')}>
-              <Github size={18} />
+          {getProjectLinks(item).map(({ key, Icon, aria, url }) => (
+            <a
+              key={key}
+              className={styles.iconLink}
+              href={url}
+              target="_blank"
+              rel="noopener"
+              aria-label={t(aria)}
+              title={t(aria)}
+            >
+              <Icon size={18} />
             </a>
-          )}
-          {item.demo && item.demo !== '#' && (
-            <a className={styles.iconLink} href={item.demo} target="_blank" rel="noopener" aria-label={t('projects.aria.demo')}>
-              <ExternalLink size={18} />
-            </a>
-          )}
+          ))}
         </div>
       </div>
     </div>
@@ -183,7 +184,7 @@ function GridCard({ item, index, onOpen }) {
   const reveal = useInView({ threshold: 0.1 })
   const { t } = useI18n()
   const hasGalleryOrVideo = Boolean(item.gallery?.length || item.video)
-  const externalLink = item.github || item.demo
+  const links = getProjectLinks(item)
 
   const cardInner = (
     <>
@@ -196,16 +197,11 @@ function GridCard({ item, index, onOpen }) {
         <div className={styles.cardHeader}>
           <Folder size={22} className={styles.folderIcon} aria-hidden="true" />
           <div className={styles.cardIconRow}>
-            {item.github && (
-              <span className={styles.iconLink} aria-label={t('projects.aria.github')}>
-                <Github size={18} />
+            {links.map(({ key, Icon, aria }) => (
+              <span key={key} className={styles.iconLink} aria-label={t(aria)}>
+                <Icon size={18} />
               </span>
-            )}
-            {item.demo && item.demo !== '#' && (
-              <span className={styles.iconLink} aria-label={t('projects.aria.demo')}>
-                <ExternalLink size={18} />
-              </span>
-            )}
+            ))}
           </div>
         </div>
         <div className={styles.cardTitle}>{item.title}</div>
@@ -240,7 +236,7 @@ function GridCard({ item, index, onOpen }) {
   return (
     <a
       ref={reveal.ref}
-      href={externalLink || '#'}
+      href={links[0]?.url || '#'}
       target="_blank"
       rel="noopener"
       className={className}

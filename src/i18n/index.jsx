@@ -44,6 +44,8 @@ const translations = {
         technologies: 'Technologies',
         github: 'GitHub Repository',
         demo: 'Live Demo',
+        playStore: 'Google Play',
+        appStore: 'App Store',
         close: 'Close',
         openDetails: 'View project details',
       },
@@ -55,6 +57,8 @@ const translations = {
         screenshots: 'Screenshots',
         viewGithub: 'View on GitHub',
         viewDemo: 'Visit Live Demo',
+        viewPlayStore: 'Get it on Google Play',
+        viewAppStore: 'Download on the App Store',
       },
       featured: [
         {
@@ -170,6 +174,8 @@ const translations = {
         technologies: '\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a',
         github: '\u0645\u0633\u062a\u0648\u062f\u0639 GitHub',
         demo: '\u0639\u0631\u0636 \u062d\u064a',
+        playStore: '\u062c\u0648\u062c\u0644 \u0628\u0644\u0627\u064a',
+        appStore: '\u0622\u0628 \u0633\u062a\u0648\u0631',
         close: '\u0625\u063a\u0644\u0627\u0642',
         openDetails: '\u0639\u0631\u0636 \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0645\u0634\u0631\u0648\u0639',
       },
@@ -181,6 +187,8 @@ const translations = {
         screenshots: '\u0644\u0642\u0637\u0627\u062a \u0627\u0644\u0634\u0627\u0634\u0629',
         viewGithub: '\u0639\u0631\u0636 \u0639\u0644\u0649 GitHub',
         viewDemo: '\u0632\u064a\u0627\u0631\u0629 \u0627\u0644\u0639\u0631\u0636 \u0627\u0644\u0645\u0628\u0627\u0634\u0631',
+        viewPlayStore: '\u0627\u0644\u062a\u062d\u0645\u064a\u0644 \u0645\u0646 Google Play',
+        viewAppStore: '\u0627\u0644\u062a\u062d\u0645\u064a\u0644 \u0645\u0646 App Store',
       },
       featured: [
         {

@@ -31,7 +31,7 @@ const experiences = [
     role: 'Mobile Developer',
     dates: 'Jan 2026 — Apr 2026',
     location: 'Remote',
-    url: 'https://kuwait-explorer-legacy.vercel.app/en',
+    url: 'https://play.google.com/store/apps/details?id=com.at.mwaqi3',
     logo: null,
     skills: ['Flutter', 'BLoC', 'Dio', 'Firebase FCM', 'Google Maps', 'Clean Architecture'],
     bullets: [
