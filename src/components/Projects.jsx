@@ -9,18 +9,18 @@ import { getProjectLinks } from './projectLinks.js'
 const featuredProjects = [
   {
     label: 'Featured Project',
-    title: 'Corteksa — Enterprise CRM Platform',
+    title: 'Corteksa: Enterprise CRM Platform',
     image: '/corteks_icon.png',
     alt: 'Corteksa CRM app icon',
     desc:
       'Enterprise CRM mobile app featuring a dynamic engine that renders Tables, Kanban boards, grouped views, and Forms from server metadata. Includes unified multi-channel messaging (WhatsApp, Messenger, Instagram) with real-time WebSocket sync, optimistic UI, and scalable architecture powered by Clean Architecture and BLoC.',
-    tech: ['Flutter', 'BLoC/Cubit', 'WebSocket', 'Firebase', 'Codemagic', 'Clean Architecture'],
+    tech: ['Flutter', 'BLoC/Cubit', 'WebSocket', 'Firebase', 'AI Agents', 'Kotlin', 'Swift', 'Clean Architecture'],
     playStore: 'https://play.google.com/store/apps/details?id=com.moontij.corteksa',
     appStore: 'https://apps.apple.com/us/app/corteksa/id6772713745',
   },
   {
     label: 'Featured Project',
-    title: 'Mwaqi3 — Local Business Directory & Marketplace',
+    title: 'Mwaqi3: Local Business Directory & Marketplace',
     image: '/mawaqi3_logo.jpg',
     alt: 'Mwaqi3 app logo',
     desc:
@@ -30,7 +30,7 @@ const featuredProjects = [
   },
   {
     label: 'Featured Project',
-    title: 'Recallly — AI Voice-to-CRM App',
+    title: 'Recallly: AI Voice-to-CRM App',
     image: '/recallly_logo.png',
     alt: 'Recallly app logo',
     desc:
@@ -40,11 +40,11 @@ const featuredProjects = [
   },
   {
     label: 'Featured Project',
-    title: 'Autoinvo — Receipt & Expense Manager',
+    title: 'Autoinvo: Receipt & Expense Manager',
     image: '/autoinvo/auto_invo_graph.png',
     alt: 'Autoinvo app screen showing receipt list',
     desc:
-      'Autoinvo is a smart receipt management and invoicing app built for simplicity, speed, and reliability. Users can scan receipts using the camera or upload from their gallery, then filter and export them as PDFs. It supports full offline functionality with automatic sync when online — perfect for tracking expenses on the go.',
+      'Autoinvo is a smart receipt management and invoicing app built for simplicity, speed, and reliability. Users can scan receipts using the camera or upload from their gallery, then filter and export them as PDFs. It supports full offline functionality with automatic sync when online, perfect for tracking expenses on the go.',
     tech: ['Flutter', 'Firebase Auth', 'Cloud Firestore', 'Firebase Storage', 'Crashlytics', 'Analytics', 'camera', 'image_picker', 'PDF', 'Bloc'],
     playStore: 'https://play.google.com/store/apps/details?id=com.at.autoinvo.auto_invo',
   },
@@ -52,11 +52,11 @@ const featuredProjects = [
 
 const otherProjects = [
   {
-    title: 'B2B Marketer — Turkish Manufacturers Marketplace',
+    title: 'B2B Marketer: Turkish Manufacturers Marketplace',
     image: '/b2b_preview.jpg',
     alt: 'B2B Marketer app preview',
     desc:
-      'A B2B e-commerce platform connecting Turkish manufacturers with global buyers, particularly in Arab markets. It spans textiles, electronics, food, and machinery — facilitating seamless trade and helping boost exports. Uses clean architecture, reliable payments, and in-app browsing for a cohesive experience.',
+      'A B2B e-commerce platform connecting Turkish manufacturers with global buyers, particularly in Arab markets. It spans textiles, electronics, food, and machinery, facilitating seamless trade and helping boost exports. Uses clean architecture, reliable payments, and in-app browsing for a cohesive experience.',
     tech: ['Flutter', 'Bloc', 'Dio', 'MVVM', 'SharedPreferences', 'WebView', 'Iyzico', 'REST API'],
     github: undefined,
     demo: 'https://www.turkishmarketer.com',
@@ -66,7 +66,7 @@ const otherProjects = [
     title: 'Swift eCommerce',
     image: '/swift_present.png',
     alt: 'Swift eCommerce app preview',
-    desc: 'A sleek eCommerce app focused on fast shopping, clean architecture, and dynamic price updates — simplifying product browsing and purchasing.',
+    desc: 'A sleek eCommerce app focused on fast shopping, clean architecture, and dynamic price updates, simplifying product browsing and purchasing.',
     tech: ['Flutter', 'BLoC', 'GetIt', 'Dio', 'MVVM', 'SharedPreferences', 'Next.js'],
     github: undefined,
     demo: undefined,
@@ -80,16 +80,16 @@ const otherProjects = [
     ],
   },
   {
-    title: 'LonePaw — Pet Adoption Platform',
+    title: 'LonePaw: Pet Adoption Platform',
     image: '/lonepaw_present.png',
     alt: 'LonePaw pet adoption app preview',
-    desc: 'A mobile platform connecting pet owners with potential adopters. Browse pets by category, save favorites, post adoption listings, and chat directly with owners — streamlining the entire adoption process.',
+    desc: 'A mobile platform connecting pet owners with potential adopters. Browse pets by category, save favorites, post adoption listings, and chat directly with owners, streamlining the entire adoption process.',
     tech: ['Kotlin', 'Jetpack Compose', 'Ktor', 'Room', 'Firebase', 'Dagger Hilt', 'MVI'],
     github: 'https://github.com/7pak/LonePaw-PetAdoption',
     demo: undefined,
   },
   {
-    title: 'TastyTable — Recipe Discovery App',
+    title: 'TastyTable: Recipe Discovery App',
     image: '/tastytable_present.png',
     alt: 'TastyTable recipe app preview',
     desc: 'A recipe discovery app that helps users find delicious meals by name or category. Browse detailed ingredients and instructions, watch cooking videos, and bookmark favorites for quick access.',
@@ -98,16 +98,16 @@ const otherProjects = [
     demo: undefined,
   },
   {
-    title: 'Vib-Audio — Music Player',
+    title: 'Vib-Audio: Music Player',
     image: '/vibaudio_present.png',
     alt: 'Vib-Audio music player app preview',
-    desc: 'An Android music player with background playback, system notification controls, metadata extraction, and a collapsible UI — built for a smooth listening experience.',
+    desc: 'An Android music player with background playback, system notification controls, metadata extraction, and a collapsible UI, built for a smooth listening experience.',
     tech: ['Kotlin', 'Jetpack Compose', 'ExoPlayer', 'Coroutines', 'Koin', 'MVI'],
     github: 'https://github.com/7pak/Vib-Player',
     demo: undefined,
   },
   {
-    title: 'Tyksee — Glasses eCommerce',
+    title: 'Tyksee: Glasses eCommerce',
     image: '/tyksee_present.png',
     alt: 'Tyksee glasses eCommerce app preview',
     desc: 'An e-commerce app for browsing and purchasing eyewear. Features product catalogs, filtering, and a clean shopping experience built with modern architecture.',
