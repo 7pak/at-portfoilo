@@ -8,7 +8,7 @@ import { useI18n } from '../i18n/index.jsx'
 
 const experiences = [
   {
-    company: 'MOONTIJ',
+    company: 'Corteksa',
     role: 'Mobile Engineer',
     dates: 'Oct 2025 - Present',
     location: 'Saudi Arabia (Remote)',
@@ -16,7 +16,7 @@ const experiences = [
     logo: null,
     skills: ['Flutter', 'Kotlin', 'Swift', 'BLoC/Cubit', 'WebSockets', 'SQLite (Drift)', 'Firebase', 'AI Agents', 'CI/CD'],
     bullets: [
-      'Sole mobile engineer on Corteksa, a multi-tenant B2B CRM live on Google Play and the App Store, across 43 releases.',
+      'Sole mobile engineer on the Corteksa app, a multi-tenant B2B CRM live on Google Play and the App Store, across 43 releases.',
       'Built the omnichannel inbox for WhatsApp, Instagram, Messenger and TikTok over self-reconnecting WebSocket (Socket.IO) channels, with template-only replies after WhatsApp’s 24-hour window and interactive buttons, lists and polls.',
       'Built the mobile client for a multi-agent AI assistant: real-time streaming of agent and tool-call events, human-in-the-loop approval before any data change, and reconnect recovery that restores pending approvals.',
       'Made the AI agent workflows reliable in production: a stall watchdog for unresponsive agents and an intent queue flushed only when the agent service is ready.',
@@ -98,7 +98,7 @@ const milestones = [
   { year: '2025', title: 'Founded AT Software', desc: 'Building premium products and client solutions.' },
   { year: '2025', title: 'Key Promotions & Transitions', desc: 'Freelance projects and cross-functional contributions.' },
   { year: '2026', title: 'Script Media: Mwaqi3', desc: 'Built a Kuwait business directory and marketplace app.' },
-  { year: '2026', title: 'Present Day', desc: 'Mobile Engineer at MOONTIJ: CRM, real-time messaging and an AI assistant.' },
+  { year: '2026', title: 'Present Day', desc: 'Mobile Engineer at Corteksa: CRM, real-time messaging and an AI assistant.' },
 ]
 
 export default function Experience() {
